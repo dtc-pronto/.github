@@ -20,7 +20,7 @@ Finally, you may connect over the rajant network. The jackals will automatically
  - Phobos: `10.10.10.111`
  - Deimos: `10.10.10.112`
 
-Once you have network configurations correct on your ground station you can ssh into the jackal with: `ssh dtc@<jackal_ip>`, the password is a space.
+Once you have network configurations correct on your ground station you can ssh into the jackal with: `ssh dtc@<jackal_ip>`.
 
 ### Running the Jackal
 Once you have logged into the jackal, navigate to the `Docker` directory with `cd Docker`. Here you can configure what components you want to run in the `docker-compose.yml`. In the `jackal-base` image you can configure what sensors you want to run, by setting the environment variable for the respective sensor to `true/false`. Setting the value to true will start the ros device driver, otherwise it will the driver will not be running and you will not see the rostopics. Additionally, in `docker-compose.yml` you can configure what inference components you want to run in the respective image by setting the `RUN` variable to `true/false`. Once you have your `docker-compose.yml` configured you can start the jackal stack with the following steps.
