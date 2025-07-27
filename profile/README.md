@@ -2,6 +2,21 @@
 
 This contains all the necessary code and configs for the Darpa Triage Challenge PRONTO Team. 
 
+## Repository Overview
+Here is an overview of all the repositories, so you know which one your code should go in. If you're not sure ask Jason or Raj. 
+
+- __atak__: This repo should contain all the visualization code for the DARPA required ATAK visualization. 
+- __basestation__: This repo should contain all the code for the basestation, including the visualization, rtk, and scorecard sender.
+- __common__: This repo should contain code that will be common across all the platforms, that is the Jackal UGV, Faclon UAV and basestation. This would include custom messages that MOCHA would use.
+- __falcon-autonomy__: This repo should contain the map construction that the ground robots will use in their autonomy stack for global planning.
+- __falcon-base__: This should contain configs and code necessary to run the falcon and all its sensors.
+- __falcon-triage__: This repo should contain all the code for detecting and localizing the casualties, blood detection, etc...
+- __jackal-autonomy__: This repo should contain all the code for jackal autonomy, including odometry, local planning, global planning and visual servoing.
+- __jackal-base__: This repo should contain all the code and configs the jackal itself and its sensors.
+- __jackal-triage__: This repo should contain all the code for triaging on the jackal including code related to heart rate detection, respiration rate detection, vlm triaging, etc...
+
+## Jackal
+
 Below are some usefule tidbits on the Jackal. Feel free to add more descriptions here.
 
 ### Powering On and Off
