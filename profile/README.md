@@ -22,6 +22,12 @@ The Lambda workstation is organized as follows. Everyone has two directories one
 sudo cryptesetup luksOpen /dev/nvme0p2 nvme
 sudo mount /dev/mapper/nvme /mnt/ENCRYPTED
 ```
+If you want to access the encrypted data on docker you need to add your user to the `hsresearcher` group in docker:
+```
+RUN sudo groupadd hsresearcher
+RUN sudo usermod -a -G hsresearcher $USER
+``` 
+Then when you run your docker image you need to add this to you docker run command: `--user $(id -u):$(getent group hsresearcher | cut -d: -f3)`.
 
 ## Jackal
 
