@@ -15,6 +15,14 @@ Here is an overview of all the repositories, so you know which one your code sho
 - __jackal-base__: This repo should contain all the code and configs the jackal itself and its sensors.
 - __jackal-triage__: This repo should contain all the code for triaging on the jackal including code related to heart rate detection, respiration rate detection, vlm triaging, etc...
 
+## Pronto Workstation
+
+The Lambda workstation is organized as follows. Everyone has two directories one for code and environments and one for data. You code and envionments should go into `/home/$USER` (a.k.a. `~/`), this is the folder you automatically enter when you shh into the machine or open a terminal. Your data should go in `/mnt/UNENCRYPRTED/$USER`, only you have access to this folder. If you have human subjects data that needs to go onto the encrypted drive at `/mnt/ENCRYPTED`. This drive will not be mounted automatically on boot because it encrypted. To mount it:
+```
+sudo cryptesetup luksOpen /dev/nvme0p2 nvme
+sudo mount /dev/mapper/nvme /mnt/ENCRYPTED
+```
+
 ## Jackal
 
 Below are some usefule tidbits on the Jackal. Feel free to add more descriptions here.
