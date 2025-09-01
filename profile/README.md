@@ -6,6 +6,7 @@ This contains all the necessary code and configs for the Darpa Triage Challenge 
 If you are developing for the Falcon UAV or basestation, please make sure you push your code to the correct github repo. It is best practice to push your code on a branch and then merge the branch with the main branch when your code is working consistently, this way we can ensure that if we pull code from the main branch it will work as intended. 
 
 ![software-diagram](dtc-software-dev.png)
+
 Since the Jackals have a lot of software and platforms we want to keep consistent, we've set up an automated system on the jackals as shown in the image above. You should develop your code in the `~/Jackal` folder and test it here as well. You should push unstable code to dev branch (or any branch that isn't main). Once the code is stable, you can merge it to main. Every day at 5am the `Jackal-Stable` repo will pull the changes on the main branch into them. When the robots turn on they will automatically update the `Jackal-Stable` repo from github. The `Jackal-Stable` repo should work reliably, but if you push bad code to main on any of the `jackal-*` repos it will show up here and break things. 
 
 ## Repository Overview
