@@ -48,7 +48,10 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
 ### Shared Libraries & Misc
 
 - **[common](https://github.com/dtc-pronto/common)** – Shared libraries and utilities.
+  - **[MOCHA](https://github.com/dtc-pronto/MOCHA.git)** – (need description)
   - **[rtk-correction](https://github.com/dtc-pronto/rtk-correction)** – RTK correction broadcaster and receiver.
+  - **[spoof-debugger](https://github.com/dtc-pronto/spoof-debugger.git)** – (need description)
+  - **[system-status](https://github.com/dtc-pronto/system-status.git)** – (need description)
   - **[dtc-msgs](https://github.com/dtc-pronto/dtc-msgs)** – Shared ROS 2 message definitions.
 - **[triage-experimental](https://github.com/dtc-pronto/triage-experimental)** – Experimental Triage VLM testing.
 - **[docker-build-farm](https://github.com/dtc-pronto/docker-build-farm)** – Docker build infrastructure.
