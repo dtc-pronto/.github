@@ -94,6 +94,11 @@ There are thre main ways to log into the jackal. If you are indoors the jackal w
 - Oberon: `192.168.129.113`
 - Titania: `192.168.129.114`
 
+For the spots 
+
+- Aphrodite: `192.168.129.161`
+- Ares: `192.168.129.162`
+
 If you go outdoors you can use the `jackalnet2` hotspot, the robots will automatically connect to it only if they are out of range with `mrsl_perch` with the following static ips:
 
 - Phobos: `192.168.50.111`
