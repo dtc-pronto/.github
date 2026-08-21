@@ -13,46 +13,44 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
 ## Repository Overview
 
 ### Jackal UGV
-
 - **[Jackal-Stable](https://github.com/dtc-pronto/Jackal-Stable)** – Stable deployment repository for Jackal.
-- **[jackal-base](https://github.com/dtc-pronto/jackal-base)** – Robot drivers, sensors, and hardware configuration.
-  - **[dgps-ros](https://github.com/dtc-pronto/dgps-ros)** – ROS 2 driver for the Quectel LG580P DGPS.
-- **[jackal-autonomy](https://github.com/dtc-pronto/jackal-autonomy)** – Localization, planning, and navigation.
-- **[jackal-triage](https://github.com/dtc-pronto/jackal-triage)** – Victim detection and triage algorithms.
-- **[jackal-service](https://github.com/dtc-pronto/jackal-service)** – Robot services and supporting infrastructure.
+  - **[jackal-base](https://github.com/dtc-pronto/jackal-base)** – Robot drivers, sensors, and hardware configuration.
+  - **[jackal-autonomy](https://github.com/dtc-pronto/jackal-autonomy)** – Localization, planning, and navigation.
+  - **[jackal-triage](https://github.com/dtc-pronto/jackal-triage)** – Victim detection and triage algorithms.
+  - **[jackal-service](https://github.com/dtc-pronto/jackal-service)** – Robot services and supporting infrastructure.
 
 ### Spot UGV
-
-- **[spot-base](https://github.com/dtc-pronto/spot-base)** – Spot hardware interfaces and sensors.
-- **[spot-perception](https://github.com/dtc-pronto/spot-perception)** – Perception and victim detection.
+- **[Spot-Stable](https://github.com/dtc-pronto/Spot-Stable)** – Stable deployment repository for Spot.
+  - **[spot-base](https://github.com/dtc-pronto/spot-base)** – Spot hardware interfaces and sensors.
+  - **[spot-perception](https://github.com/dtc-pronto/spot-perception)** – Perception and victim detection.
+  - **[spot-triage](https://github.com/dtc-pronto/spot-triage)** – Victim detection and triage algorithms.
+  - **[spot-service](https://github.com/dtc-pronto/spot-service)** – Robot services and supporting infrastructure.
 
 ### Falcon UAV
-
 - **[falcon-base](https://github.com/dtc-pronto/falcon-base)** – Flight platform and sensor interfaces.
 - **[falcon-autonomy](https://github.com/dtc-pronto/falcon-autonomy)** – Mapping and autonomy.
 - **[falcon-triage](https://github.com/dtc-pronto/falcon-triage)** – Victim detection and localization.
 
-### Ground Station & ATAK
+### UAV Perception
+- **[uav_tracker](https://github.com/dtc-pronto/uav_tracker)** – UAV-based detection and tracking.
+- **[skydio_decode](https://github.com/dtc-pronto/skydio_decode)** – Skydio KLV telemetry decoder.
+- **[skydio-detection](https://github.com/dtc-pronto/skydio-detection)** – Detection pipeline for the Skydio platform.
 
+### Ground Station & ATAK
 - **[basestation](https://github.com/dtc-pronto/basestation)** – Ground station software and mission tools.
 - **[atak](https://github.com/dtc-pronto/atak)** – Contain all the visualization code for the DARPA required ATAK visualization..
 - **[atak-plugin](https://github.com/dtc-pronto/atak-plugin)** – Android ATAK plugin.
 - **[rostak](https://github.com/dtc-pronto/rostak)** – ROS ↔ ATAK bridge.
 
-### UAV Perception
-
-- **[uav_tracker](https://github.com/dtc-pronto/uav_tracker)** – UAV-based detection and tracking.
-- **[skydio_decode](https://github.com/dtc-pronto/skydio_decode)** – Skydio KLV telemetry decoder.
-- **[skydio-detection](https://github.com/dtc-pronto/skydio-detection)** – Detection pipeline for the Skydio platform.
-
 ### Shared Libraries & Misc
-
 - **[common](https://github.com/dtc-pronto/common)** – Shared libraries and utilities.
   - **[MOCHA](https://github.com/dtc-pronto/MOCHA.git)** – (need description)
   - **[rtk-correction](https://github.com/dtc-pronto/rtk-correction)** – RTK correction broadcaster and receiver.
   - **[spoof-debugger](https://github.com/dtc-pronto/spoof-debugger.git)** – (need description)
   - **[system-status](https://github.com/dtc-pronto/system-status.git)** – (need description)
   - **[dtc-msgs](https://github.com/dtc-pronto/dtc-msgs)** – Shared ROS 2 message definitions.
+ 
+- **[dgps-ros](https://github.com/dtc-pronto/dgps-ros)** – ROS 2 driver for the Quectel LG580P and Septentrio Mosaic DGPS.
 - **[triage-experimental](https://github.com/dtc-pronto/triage-experimental)** – Experimental Triage VLM testing.
 - **[docker-build-farm](https://github.com/dtc-pronto/docker-build-farm)** – Docker build infrastructure.
 - **[jeti-wifi-interface](https://github.com/dtc-pronto/jeti-wifi-interface)** – Jeti radio networking interface.
