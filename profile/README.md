@@ -14,16 +14,16 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
 
 ### Jackal UGV
 - **[Jackal-Stable](https://github.com/dtc-pronto/Jackal-Stable)** – Stable deployment repository for Jackal.
-  - **[jackal-base](https://github.com/dtc-pronto/jackal-base)** – Robot drivers, sensors, and hardware configuration.
-  - **[jackal-autonomy](https://github.com/dtc-pronto/jackal-autonomy)** – Localization, planning, and navigation.
-  - **[jackal-triage](https://github.com/dtc-pronto/jackal-triage)** – Victim detection and triage algorithms.
+  - **[platform-base](https://github.com/dtc-pronto/platform-base)** – Sensors and hardware configuration.
+  - **[jackal-autonomy](https://github.com/dtc-pronto/jackal-autonomy)** – Localization, planning, navigation and victim detection.
+  - **[platform-triage](https://github.com/dtc-pronto/platform-triage)** – Victim detection and triage algorithms.
   - **[jackal-service](https://github.com/dtc-pronto/jackal-service)** – Robot services and supporting infrastructure.
 
 ### Spot UGV
 - **[Spot-Stable](https://github.com/dtc-pronto/Spot-Stable)** – Stable deployment repository for Spot.
   - **[spot-base](https://github.com/dtc-pronto/spot-base)** – Spot hardware interfaces and sensors.
-  - **[spot-perception](https://github.com/dtc-pronto/spot-perception)** – Perception and victim detection.
-  - **[spot-triage](https://github.com/dtc-pronto/spot-triage)** – Victim detection and triage algorithms.
+  - **[spot-autonomy](https://github.com/dtc-pronto/spot-autonomy)** – Localization, planning, navigation and victim detection.
+  - **[platform-triage](https://github.com/dtc-pronto/platform-triage)** – Victim detection and triage algorithms.
   - **[spot-service](https://github.com/dtc-pronto/spot-service)** – Robot services and supporting infrastructure.
 
 ### Falcon UAV
@@ -42,19 +42,19 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
 - **[atak-plugin](https://github.com/dtc-pronto/atak-plugin)** – Android ATAK plugin.
 - **[rostak](https://github.com/dtc-pronto/rostak)** – ROS ↔ ATAK bridge.
 
-### Shared Libraries & Misc
+### Shared Libraries
 - **[common](https://github.com/dtc-pronto/common)** – Shared libraries and utilities.
   - **[MOCHA](https://github.com/dtc-pronto/MOCHA.git)** – (need description)
   - **[rtk-correction](https://github.com/dtc-pronto/rtk-correction)** – RTK correction broadcaster and receiver.
   - **[spoof-debugger](https://github.com/dtc-pronto/spoof-debugger.git)** – (need description)
-  - **[system-status](https://github.com/dtc-pronto/system-status.git)** – (need description)
+  - **[viz](https://github.com/dtc-pronto/viz.git)** – Full system visualizer
   - **[dtc-msgs](https://github.com/dtc-pronto/dtc-msgs)** – Shared ROS 2 message definitions.
- 
-- **[dgps-ros](https://github.com/dtc-pronto/dgps-ros)** – ROS 2 driver for the Quectel LG580P and Septentrio Mosaic DGPS.
-- **[triage-experimental](https://github.com/dtc-pronto/triage-experimental)** – Experimental Triage VLM testing.
 - **[docker-build-farm](https://github.com/dtc-pronto/docker-build-farm)** – Docker build infrastructure.
-- **[jeti-wifi-interface](https://github.com/dtc-pronto/jeti-wifi-interface)** – Jeti radio networking interface.
+
+### Misc
 - **[deprecated](https://github.com/dtc-pronto/deprecated)** – Archived repositories.
+- **[triage-experimental](https://github.com/dtc-pronto/triage-experimental)** – Experimental Triage VLM testing.
+- **[jeti-wifi-interface](https://github.com/dtc-pronto/jeti-wifi-interface)** – Jeti radio networking interface.
 - **[dtc-pronto.github.io](https://github.com/dtc-pronto/dtc-pronto.github.io)** - Public Team PRONTO Website
 
 ## Pronto Workstation
