@@ -8,54 +8,74 @@ If you are developing for the Falcon UAV or basestation, please make sure you pu
 
 ![software-diagram](dtc-software-dev.png)
 
-Since the Jackals have a lot of software and platforms we want to keep consistent, we've set up an automated system on the jackals as shown in the image above. You should develop your code in the `~/Jackal` folder and test it here as well. You should push unstable code to dev branch (or any branch that isn't main). Once the code is stable, you can merge it to main. Every day at 5am the `Jackal-Stable` repo will pull the changes on the main branch into them. When the robots turn on they will automatically update the `Jackal-Stable` repo from github. The `Jackal-Stable` repo should work reliably, but if you push bad code to main on any of the `jackal-*` repos it will show up here and break things.
+Since the Jackals have a lot of software and platforms we want to keep consistent, we've set up an automated system on the jackals as shown in the image above. You should develop your code in the `~/Jackal` folder and test it here as well. You should push unstable code to dev branch (or any branch that isn't main). Once the code is stable, you can merge it to main. Every day at 5am the `Jackal-Stable` repo will pull the changes on the main branch into them. When the robots turn on they will automatically update the `Jackal-Stable` repo from github. The `Jackal-Stable` repo should work reliably, but if you push bad code to main on any of the `jackal-*` repos it will show up here and break things. These rules apply to all other mobile platforms (Spots, Falcon, Skydios)
 
 ## Repository Overview
+<table cellpadding="2" cellspacing="0">
+  <tr>
+    <!-- Swapped h2 for font size="5" to destroy the GitHub underline -->
+    <td colspan="6" align="center"><b><font size="5">Repositories</font></b></td>
+  </tr>
 
-### Jackal UGV
-- **[Jackal-Stable](https://github.com/dtc-pronto/Jackal-Stable)** – Stable deployment repository for Jackal.
-  - **[platform-base](https://github.com/dtc-pronto/platform-base)** – Sensors and hardware configuration.
-  - **[jackal-autonomy](https://github.com/dtc-pronto/jackal-autonomy)** – Localization, planning, navigation and victim detection.
-  - **[platform-triage](https://github.com/dtc-pronto/platform-triage)** – Victim detection and triage algorithms.
-  - **[jackal-service](https://github.com/dtc-pronto/jackal-service)** – Robot services and supporting infrastructure.
+  <tr>
+    <td colspan="2" align="center"><b>Basestation / Medic ATAK</b></td>
+    <td colspan="2" align="center"><b>UAVs</b></td>
+    <td colspan="2" align="center"><b>UGVs</b></td>
+  </tr>
 
-### Spot UGV
-- **[Spot-Stable](https://github.com/dtc-pronto/Spot-Stable)** – Stable deployment repository for Spot.
-  - **[spot-base](https://github.com/dtc-pronto/spot-base)** – Spot hardware interfaces and sensors.
-  - **[spot-autonomy](https://github.com/dtc-pronto/spot-autonomy)** – Localization, planning, navigation and victim detection.
-  - **[platform-triage](https://github.com/dtc-pronto/platform-triage)** – Victim detection and triage algorithms.
-  - **[spot-service](https://github.com/dtc-pronto/spot-service)** – Robot services and supporting infrastructure.
+  <tr>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com"><b>basestation</b></a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com"><b>atak</b></a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com"><b>Falcon-Stable</b></a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com"><b>Skydio-Stable</b></a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com"><b>Jackal-Stable</b></a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com"><b>Spot-Stable</b></a></td>
+  </tr>
 
-### Falcon UAV
-- **[falcon-base](https://github.com/dtc-pronto/falcon-base)** – Flight platform and sensor interfaces.
-- **[falcon-autonomy](https://github.com/dtc-pronto/falcon-autonomy)** – Mapping and autonomy.
-- **[falcon-triage](https://github.com/dtc-pronto/falcon-triage)** – Victim detection and localization.
+  <tr>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com">common</a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com-plugin">atak-plugin</a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-triage</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio-localization</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">platform-triage</a></td>
+  </tr>
 
-### UAV Perception
-- **[uav_tracker](https://github.com/dtc-pronto/uav_tracker)** – UAV-based detection and tracking.
-- **[skydio_decode](https://github.com/dtc-pronto/skydio_decode)** – Skydio KLV telemetry decoder.
-- **[skydio-detection](https://github.com/dtc-pronto/skydio-detection)** – Detection pipeline for the Skydio platform.
+  <tr>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com">scoring-server-submission</a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com">rostak</a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-autonomy</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio_detection</a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com">jackal-autonomy</a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com">spot-autonomy</a></td>
+  </tr>
 
-### Ground Station & ATAK
-- **[basestation](https://github.com/dtc-pronto/basestation)** – Ground station software and mission tools.
-- **[atak](https://github.com/dtc-pronto/atak)** – Contain all the visualization code for the DARPA required ATAK visualization..
-- **[atak-plugin](https://github.com/dtc-pronto/atak-plugin)** – Android ATAK plugin.
-- **[rostak](https://github.com/dtc-pronto/rostak)** – ROS ↔ ATAK bridge.
+  <tr>
+    <td colspan="2"></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-base</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio_decode</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">platform-base</a></td>
+  </tr>
 
-### Shared Libraries
-- **[common](https://github.com/dtc-pronto/common)** – Shared libraries and utilities.
-  - **[MOCHA](https://github.com/dtc-pronto/MOCHA.git)** – (need description)
-  - **[rtk-correction](https://github.com/dtc-pronto/rtk-correction)** – RTK correction broadcaster and receiver.
-  - **[spoof-debugger](https://github.com/dtc-pronto/spoof-debugger.git)** – (need description)
-  - **[viz](https://github.com/dtc-pronto/viz.git)** – Full system visualizer
-  - **[dtc-msgs](https://github.com/dtc-pronto/dtc-msgs)** – Shared ROS 2 message definitions.
-- **[docker-build-farm](https://github.com/dtc-pronto/docker-build-farm)** – Docker build infrastructure.
+  <tr>
+    <td colspan="2"></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">uav_tracker</a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com">jackal-service</a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com">spot-service</a></td>
+  </tr>
 
-### Misc
-- **[deprecated](https://github.com/dtc-pronto/deprecated)** – Archived repositories.
-- **[triage-experimental](https://github.com/dtc-pronto/triage-experimental)** – Experimental Triage VLM testing.
-- **[jeti-wifi-interface](https://github.com/dtc-pronto/jeti-wifi-interface)** – Jeti radio networking interface.
-- **[dtc-pronto.github.io](https://github.com/dtc-pronto/dtc-pronto.github.io)** - Public Team PRONTO Website
+  <tr>
+    <!-- Swapped the bottom text to match the clean sizing style -->
+    <td colspan="6" align="center"><b><font size="4">Miscellaneous</font></b></td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">deprecated</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">docker-build-farm</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">jeti-wifi-interface</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">triage-experimental</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">dtc-pronto.github.io</a></td>
+  </tr>
+</table>
 
 ## Pronto Workstation
 
@@ -75,17 +95,13 @@ RUN sudo usermod -a -G hsresearcher $USER
 
 Then when you run your docker image you need to add this to you docker run command: `--user $(id -u):$(getent group hsresearcher | cut -d: -f3)`.
 
-## Jackal
+## UGVs
 
-Below are some usefule tidbits on the Jackal. Feel free to add more descriptions here.
-
-### Powering On and Off
-
-To power on the jackals short the second and third pins from the left. The jackals should be powered off from the command line. Run `sudo shutdown now`. This will power off the entire jackal.
+Below are some usefule tidbits on the UGVs. Feel free to add more descriptions here.
 
 ### Logging In
 
-There are thre main ways to log into the jackal. If you are indoors the jackal will automatically connect to the `mrsl_perch` network with the following static ips:
+There are three main ways to log into the jackal. If you are indoors, the jackal will automatically connect to the `mrsl_perch` network with the following static ips:
 
 - Phobos: `192.168.129.111`
 - Deimos: `192.168.129.112`
@@ -107,15 +123,15 @@ Finally, you may connect over the rajant network. The jackals will automatically
 - Phobos: `10.10.10.111`
 - Deimos: `10.10.10.112`
 
-Once you have network configurations correct on your ground station you can ssh into the jackal with: `ssh dtc@<jackal_ip>`.
+Once you have network configurations correct on your ground station you can ssh into the UGV with: `ssh dtc@<UGV_ip>`.
 
 ### Running the Jackal
 
-Once you have logged into the jackal, navigate to the `Docker` directory with `cd Docker`. Here you can configure what components you want to run in the `docker-compose.yml`. In the `jackal-base` image you can configure what sensors you want to run, by setting the environment variable for the respective sensor to `true/false`. Setting the value to true will start the ros device driver, otherwise it will the driver will not be running and you will not see the rostopics. Additionally, in `docker-compose.yml` you can configure what inference components you want to run in the respective image by setting the `RUN` variable to `true/false`. Once you have your `docker-compose.yml` configured you can start the jackal stack with the following steps.
+Once you have logged into the jackal, navigate to the `Jackal` directory with `cd Docker`. Here you can configure what components you want to run in the `docker-compose.yml`. In the `jackal-base` image you can configure what sensors you want to run, by setting the environment variable for the respective sensor to `true/false`. Setting the value to true will start the ros device driver, otherwise the driver will not be running and you will not see the rostopics. Additionally, in `docker-compose.yml` you can configure what inference components you want to run in the respective image by setting the `RUN` variable to `true/false`. Once you have your `docker-compose.yml` configured you can start the jackal stack with the following steps.
 
 - `tmux`
 - `docker compose up`
-  The system is now running and the jackal will be driveable.
+  The system is now running and the jackal will be driveable. Follow similar steps to run the Spots.
 
 ### Bagging Data
 
