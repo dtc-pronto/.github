@@ -24,43 +24,43 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
   </tr>
 
   <tr>
-    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com"><b>basestation</b></a></td>
-    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com"><b>atak</b></a></td>
-    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com"><b>Falcon-Stable</b></a></td>
-    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com"><b>Skydio-Stable</b></a></td>
-    <td align="center" bgcolor="#aee6c2"><a href="https://github.com"><b>Jackal-Stable</b></a></td>
-    <td align="center" bgcolor="#fff1ad"><a href="https://github.com"><b>Spot-Stable</b></a></td>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com/dtc-pronto/basestation"><b>basestation</b></a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com/dtc-pronto/atak"><b>atak</b></a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com/dtc-pronto/Falcon-Stable"><b>Falcon-Stable</b></a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com/dtc-pronto/Skydio-Stable"><b>Skydio-Stable</b></a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com/dtc-pronto/Jackal-Stable"><b>Jackal-Stable</b></a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com/dtc-pronto/Spot-Stable"><b>Spot-Stable</b></a></td>
   </tr>
 
   <tr>
-    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com">common</a></td>
-    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com-plugin">atak-plugin</a></td>
-    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-triage</a></td>
-    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio-localization</a></td>
-    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">platform-triage</a></td>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com/dtc-pronto/common">common</a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com/dtc-pronto/atak-plugin">atak-plugin</a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com/dtc-pronto/falcon-triage">falcon-triage</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com/dtc-pronto/skydio-localization">skydio-localization</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/platform-triage">platform-triage</a></td>
   </tr>
 
   <tr>
-    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com">scoring-server-submission</a></td>
-    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com">rostak</a></td>
-    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-autonomy</a></td>
-    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio_detection</a></td>
-    <td align="center" bgcolor="#aee6c2"><a href="https://github.com">jackal-autonomy</a></td>
-    <td align="center" bgcolor="#fff1ad"><a href="https://github.com">spot-autonomy</a></td>
-  </tr>
-
-  <tr>
-    <td colspan="2"></td>
-    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com">falcon-base</a></td>
-    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com">skydio_decode</a></td>
-    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">platform-base</a></td>
+    <td align="center" bgcolor="#f8d4ad"><a href="https://github.com/dtc-pronto/scoring-server-submission">scoring-server-submission</a></td>
+    <td align="center" bgcolor="#d9d4f7"><a href="https://github.com/dtc-pronto/rostak">rostak</a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com/dtc-pronto/falcon-autonomy">falcon-autonomy</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com/dtc-pronto/skydio_detection">skydio_detection</a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com/dtc-pronto/jackal-autonomy">jackal-autonomy</a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com/dtc-pronto/spot-autonomy">spot-autonomy</a></td>
   </tr>
 
   <tr>
     <td colspan="2"></td>
-    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">uav_tracker</a></td>
-    <td align="center" bgcolor="#aee6c2"><a href="https://github.com">jackal-service</a></td>
-    <td align="center" bgcolor="#fff1ad"><a href="https://github.com">spot-service</a></td>
+    <td align="center" bgcolor="#f4b8bd"><a href="https://github.com/dtc-pronto/falcon-base">falcon-base</a></td>
+    <td align="center" bgcolor="#b9d2f2"><a href="https://github.com/dtc-pronto/skydio_decode">skydio_decode</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/platform-base">platform-base</a></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/uav_tracker">uav_tracker</a></td>
+    <td align="center" bgcolor="#aee6c2"><a href="https://github.com/dtc-pronto/jackal-service">jackal-service</a></td>
+    <td align="center" bgcolor="#fff1ad"><a href="https://github.com/dtc-pronto/spot-service">spot-service</a></td>
   </tr>
 
   <tr>
@@ -69,11 +69,11 @@ Since the Jackals have a lot of software and platforms we want to keep consisten
   </tr>
   
   <tr>
-    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">deprecated</a></td>
-    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">docker-build-farm</a></td>
-    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">jeti-wifi-interface</a></td>
-    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com">triage-experimental</a></td>
-    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com">dtc-pronto.github.io</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/deprecated">deprecated</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/docker-build-farm">docker-build-farm</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/jeti-wifi-interface">jeti-wifi-interface</a></td>
+    <td align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/triage-experimental">triage-experimental</a></td>
+    <td colspan="2" align="center" bgcolor="#bdbdbd"><a href="https://github.com/dtc-pronto/dtc-pronto.github.io">dtc-pronto.github.io</a></td>
   </tr>
 </table>
 
